@@ -61,7 +61,9 @@ $currency_symbol = $this->customlib->getSchoolCurrencyFormat();
                                             <td>
                                                 <button type="button" class="btn btn-primary"
                                                     onclick="set_model_val('<?=$value->remarks_id?>')"
-                                                    data-toggle="modal" data-target="#commentModal">
+                                                    data-toggle="modal" data-target="#commentModal"
+                                                    <?php if(!empty($value->comments)){echo 'disabled';} ?> 
+                                                    >
                                                     Add Answer
                                                 </button>
                                             </td>

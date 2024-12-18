@@ -83,6 +83,15 @@
             border: 1px lightgray solid;
         }
     }
+    .table-bordered>:not(caption)>* {
+        border: 2px solid black;
+    }
+    .table-bordered>:not(caption)>*>* {
+        border: 2px solid black;
+    }
+    .table>:not(caption)>*>* {
+        border: 2px solid black;
+    }
     </style>
 </head>
 
