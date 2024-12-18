@@ -77,14 +77,22 @@
     /* Show table borders */
     table {
         border-collapse: collapse;
-        border: 1px lightgray solid;
+        border: 2px lightgray solid;
     }
 
     th, td {
-        border: 1px lightgray solid;
+        border: 2px lightgray solid;
     }
 }
-
+.table-bordered>:not(caption)>* {
+        border: 2px solid black;
+    }
+    .table-bordered>:not(caption)>*>* {
+        border: 2px solid black;
+    }
+    .table>:not(caption)>*>* {
+        border: 2px solid black;
+    }
     </style>
 </head>
 
@@ -196,7 +204,7 @@ if ($result->Type == 1) {
 
             <div class="row">
                 <div class="col-9 table-responsive">
-                    <table class="table table-bordered" style="border-color:black;" border="2">
+                    <table class="table table-bordered" style="border: 2px solid; border-color:black;" border="2">
 
 
                         <tr>
@@ -324,7 +332,7 @@ if ($result->Type == 1) {
                     </table>
                 </div>
                 <div class="col-3">
-                    <table class="table table-bordered" border="2">
+                    <table class="table table-bordered" style="border: 2px solid; border-color:black;" border="2">
                         <thead>
                             <tr>
                                 <th colspan="2" class="big">Affective and Psycomotor Report</th>
@@ -365,7 +373,7 @@ if ($result->Type == 1) {
                             </tr>
                         </tbody>
                     </table>
-                    <table class="table table-bordered" border="2">
+                    <table class="table table-bordered" style="border: 2px solid;border-color:black;" border="2">
                         <thead>
                             <tr>
                                 <th>Behaviour</th>
@@ -402,7 +410,7 @@ if ($result->Type == 1) {
                             <p style="text-transform: uppercase;">Summary of <?= $student["firstname"]; ?>
                                 <?= $student["lastname"]; ?></p>
                         </b></center>
-                    <table class="table table-bordered table-sm" border="2">
+                    <table class="table table-bordered table-sm" style="border: 2px solid; border-color:black;" border="2">
                         <thead>
                             <tr>
                                 <th><?= $result->terms ?> Total Score</th>
@@ -426,7 +434,7 @@ if ($result->Type == 1) {
                     <center><b>
                             <p>Key To Grading</p>
                         </b></center>
-                    <table class="table table-borderless table-sm" border="2">
+                    <table class="table table-borderless table-sm" style="border: 2px solid; border-color:black;" border="2">
                         <tbody>
                             <tr>
                                 <td>[1] <?= minScore('F', $result->terms) ?>%-<?= maxScore('F', $result->terms) ?>% = F
@@ -447,7 +455,7 @@ if ($result->Type == 1) {
                             </tr>
                         </tbody>
                     </table>
-                    <table class="table table-bordered table-sm" border="2">
+                    <table class="table table-bordered table-sm" style="border: 2px solid; border-color:black;" border="2">
                         <thead>
                             <tr>
                                 <th>CLASS TEACHER'S REMARK</th>
