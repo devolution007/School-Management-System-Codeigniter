@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 29, 2024 at 01:04 AM
+-- Generation Time: Dec 24, 2024 at 12:42 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -3793,6 +3793,7 @@ INSERT INTO `permission_category` (`id`, `perm_group_id`, `name`, `short_code`, 
 (271, 15, 'Currency Switcher', 'currency_switcher', 1, 0, 0, 0, '2019-11-24 05:17:11'),
 (272, 2, 'Offline Bank Payments', 'offline_bank_payments', 1, 0, 0, 0, '2018-06-27 00:18:15'),
 (273, 29, 'Copy Old Lessons', 'copy_old_lesson', 1, 0, 0, 0, '2020-05-28 22:20:11'),
+(2010, 6, 'boardcast', 'boardcast', 1, 0, 0, 0, '2024-12-20 00:50:56'),
 (6001, 600, 'Live Classes', 'gmeet_live_classes', 1, 1, 0, 1, '2020-09-22 10:03:29'),
 (6002, 600, 'Live Meeting', 'gmeet_live_meeting', 1, 1, 0, 1, '2020-09-22 10:03:44'),
 (6003, 600, 'Live Meeting Report', 'gmeet_live_meeting_report', 1, 0, 0, 0, '2020-09-22 10:03:57'),
@@ -3841,7 +3842,7 @@ INSERT INTO `permission_group` (`id`, `name`, `short_code`, `is_active`, `system
 (3, 'Income', 'income', 1, 0, '2020-06-01 01:57:39'),
 (4, 'Expense', 'expense', 1, 0, '2019-03-15 09:06:22'),
 (5, 'Student Attendance', 'student_attendance', 1, 0, '2018-07-02 07:48:08'),
-(6, 'Examination', 'examination', 1, 0, '2018-07-11 02:49:08'),
+(6, 'Examination', 'examination', 1, 0, '2024-12-19 22:31:23'),
 (7, 'Academics', 'academics', 1, 1, '2018-07-02 07:25:43'),
 (8, 'Download Center', 'download_center', 1, 0, '2018-07-02 07:49:29'),
 (9, 'Library', 'library', 1, 0, '2018-06-28 11:13:14'),
@@ -4125,7 +4126,9 @@ INSERT INTO `results` (`id`, `s_id`, `session`, `class_id`, `class`, `terms`, `p
 (45, 33, '2023-24', 1, 'JSS 1', '2nd Term', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 1, NULL, '2024-11-28 21:22:41', NULL),
 (46, 34, '2023-24', 1, 'JSS 1', '3rd Term', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 1, NULL, '2024-11-28 21:24:06', NULL),
 (47, 36, '2023-24', 1, 'JSS 1', '3rd Term', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 1, NULL, '2024-11-28 21:49:19', NULL),
-(48, 37, '2023-24', 1, 'JSS 1', '3rd Term', 'PASS FAIL', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABCABC', 'ABC', 'ABC', 'ABC', 'ABC', 1, NULL, '2024-11-28 22:31:54', NULL);
+(48, 37, '2023-24', 1, 'JSS 1', '3rd Term', 'PASS FAIL', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABC', 'ABCABC', 'ABC', 'ABC', 'ABC', 'ABC', 1, NULL, '2024-11-28 22:31:54', NULL),
+(49, 20, '2023-24', 1, 'JSS 1', '3rd Term', 'asdf', '20', 'asd', 'asd', 'asd', 'asd', 'asd', 'asd', 'asd', 'asd', 'asd', 'asd', 'asd', 'asd', 'asd', 'asd', 'asd', 1, NULL, '2024-12-18 21:28:31', NULL),
+(50, 36, '2023-24', 1, 'JSS 1', '2nd Term', 'dfgh', 'ad', 'asd', 'asd', 'asd', 'asd', 'asd', 'asd', 'asd', 'asd', 'asd', 'asd', 'asd', 'asd', 'asd', 'asd', 'asd', 1, NULL, '2024-12-18 22:12:30', NULL);
 
 -- --------------------------------------------------------
 
@@ -4196,7 +4199,13 @@ INSERT INTO `result_details` (`id`, `r_id`, `subject`, `assessment_0`, `assessme
 (45, 47, 'Biology', 1, 1, 0, 0, 1),
 (46, 48, 'Maths', 1, 2, 0, 0, 1),
 (47, 48, 'English', 1, 2, 0, 0, 1),
-(48, 48, 'Biology', 1, 2, 0, 0, 1);
+(48, 48, 'Biology', 1, 2, 0, 0, 1),
+(49, 49, 'Maths', 20, 20, 0, 0, 20),
+(50, 49, 'English', 20, 20, 0, 0, 20),
+(51, 49, 'Biology', 20, 20, 0, 0, 20),
+(52, 50, 'Maths', 20, 20, 0, 0, 20),
+(53, 50, 'English', 20, 20, 0, 0, 20),
+(54, 50, 'Biology', 20, 20, 0, 0, 20);
 
 -- --------------------------------------------------------
 
@@ -4221,7 +4230,7 @@ CREATE TABLE `roles` (
 
 INSERT INTO `roles` (`id`, `name`, `slug`, `is_active`, `is_system`, `is_superadmin`, `created_at`, `updated_at`) VALUES
 (1, 'Admin', NULL, 0, 1, 0, '2018-06-30 15:39:11', '0000-00-00'),
-(2, 'Teacher', NULL, 0, 1, 0, '2018-06-30 15:39:14', '0000-00-00'),
+(2, 'Teacher', NULL, 0, 1, 0, '2024-12-19 22:36:20', '0000-00-00'),
 (3, 'Accountant', NULL, 0, 1, 0, '2018-06-30 15:39:17', '0000-00-00'),
 (4, 'Librarian', NULL, 0, 1, 0, '2018-06-30 15:39:21', '0000-00-00'),
 (6, 'Receptionist', NULL, 0, 1, 0, '2018-07-02 05:39:03', '0000-00-00'),
@@ -4423,9 +4432,6 @@ INSERT INTO `roles_permissions` (`id`, `role_id`, `perm_cat_id`, `can_view`, `ca
 (1092, 1, 223, 1, 0, 0, 0, '2019-11-30 01:32:51'),
 (1103, 2, 205, 1, 1, 1, 1, '2019-11-30 01:56:04'),
 (1105, 2, 23, 1, 1, 0, 0, '2024-08-06 11:07:54'),
-(1106, 2, 24, 1, 0, 0, 0, '2019-11-30 01:56:04'),
-(1107, 2, 25, 1, 0, 0, 0, '2019-11-30 01:56:04'),
-(1108, 2, 77, 1, 0, 0, 0, '2019-11-30 01:56:04'),
 (1123, 3, 8, 1, 1, 1, 1, '2019-11-30 06:46:18'),
 (1125, 3, 69, 1, 1, 1, 1, '2019-11-30 07:00:49'),
 (1126, 3, 70, 1, 1, 1, 1, '2019-11-30 07:04:46'),
@@ -4700,10 +4706,10 @@ INSERT INTO `roles_permissions` (`id`, `role_id`, `perm_cat_id`, `can_view`, `ca
 (1532, 2, 6003, 1, 0, 0, 0, '2021-01-29 09:31:16'),
 (1533, 2, 6004, 1, 0, 0, 0, '2021-01-29 09:31:16'),
 (1534, 4, 6005, 1, 0, 1, 0, '2022-07-13 04:28:08'),
-(1535, 2, 7015, 1, 1, 1, 0, '2023-10-05 05:16:57'),
+(1535, 2, 7015, 0, 1, 1, 1, '2024-12-23 21:43:06'),
 (1536, 2, 7016, 1, 1, 1, 1, '2023-10-30 04:48:51'),
-(1537, 2, 7017, 1, 0, 0, 0, '2024-01-20 11:05:38'),
-(1538, 1, 7016, 1, 1, 1, 1, '2024-10-14 18:24:46');
+(1538, 1, 7016, 1, 1, 1, 1, '2024-10-14 18:24:46'),
+(1548, 2, 2010, 1, 0, 0, 0, '2024-12-21 20:00:47');
 
 -- --------------------------------------------------------
 
@@ -5370,7 +5376,7 @@ INSERT INTO `sidebar_sub_menus` (`id`, `sidebar_menu_id`, `menu`, `key`, `lang_k
 (197, 28, 'setting', NULL, 'setting', 'onlinecourse/course/setting', 5, '(\'online_course_setting\', \'can_view\')', NULL, 'course', 'setting', '', 1, '2022-07-22 01:13:30'),
 (199, 11, 'generate_result', 'generate_result', 'generate_result', 'admin/result', 10, '(\'gererate_result\', \'can_view\')', NULL, 'result', 'index', NULL, 1, '2023-10-05 15:30:12'),
 (200, 11, 'result', 'result', 'result', 'admin/result/list', 11, '(\'generate_result\', \'can_view\')', NULL, 'result', 'list', NULL, 1, '2023-10-05 15:22:31'),
-(201, 11, 'boardcast', 'boardcast', 'boardcast', 'admin/result/boardcast', 12, '(\'generate_result\', \'can_view\')', NULL, 'result', 'boardcast', NULL, 1, '2023-10-05 15:22:31'),
+(201, 11, 'boardcast', 'boardcast', 'boardcast', 'admin/result/boardcast', 12, '(\'boardcast\', \'can_view\')', NULL, 'result', 'boardcast', NULL, 1, '2024-12-20 00:46:57'),
 (202, 10, 'student_behavior', 'student_behavior', 'student_behavior', 'admin/student_behavior', 1, '(\'student_behavior\', \'can_view\')', NULL, 'student_behavior', 'index', '', 1, '2022-10-20 05:50:25'),
 (203, 14, 'assign_subject_teacher', NULL, 'assign_subject_teacher', 'admin/teacher/assign_subject_teacher', 9, '(\'assign_subject_teacher\', \'can_view\')', NULL, 'teacher', 'assign_subject_teacher,update_subject_teacher', NULL, 1, '2024-01-20 10:57:36');
 
@@ -5486,7 +5492,7 @@ CREATE TABLE `staff` (
 INSERT INTO `staff` (`id`, `employee_id`, `lang_id`, `currency_id`, `department`, `designation`, `qualification`, `work_exp`, `name`, `surname`, `father_name`, `mother_name`, `contact_no`, `emergency_contact_no`, `email`, `dob`, `marital_status`, `date_of_joining`, `date_of_leaving`, `local_address`, `permanent_address`, `note`, `image`, `password`, `gender`, `account_title`, `bank_account_no`, `bank_name`, `ifsc_code`, `bank_branch`, `payscale`, `basic_salary`, `epf_no`, `contract_type`, `shift`, `location`, `facebook`, `twitter`, `linkedin`, `instagram`, `resume`, `joining_letter`, `resignation_letter`, `other_document_name`, `other_document_file`, `user_id`, `is_active`, `verification_code`, `disable_at`) VALUES
 (1, '9000', 0, 150, NULL, NULL, '', '', 'Super Admin', '', '', '', '', '', 'admin@schools.247pos.ng', '2020-01-01', '', NULL, NULL, '', '', '', '1722934781-29784789466b1e5fd36372!20230920_214307_0001.png', '$2y$10$uT5EZE2CPMwqes2mFe1HSeVT9Y1WMv.mG5tIk/Eohwhv56Ni2NeDS', 'Male', '', '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', 'Other Document', '', 0, 1, '', NULL),
 (2, 'ETSA715001', 0, 0, NULL, NULL, '', '', 'victoria', 'johnson', '', '', '', '', 'edricnigerialimited@gmail.com', '2023-05-31', '', '2023-05-31', NULL, '', '', '', '1687388340-31382151649380b4b7a9b!ets.png', '$2y$10$G7IP7NeGWBhVQlkDXVquW.pWZM9NIL6mEey8zYb64aGC5fS6n1iG6', 'Male', '', '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 1, '', NULL),
-(3, 'ETSA715002', 0, 0, NULL, NULL, 'Saepe labore ea inci', 'Sed dolor ad incidid', 'Paul Chapman', 'Leblanc', 'Debra Collins', 'Dorian Kirby', 'Consequuntur qui par', 'Aliqua Voluptate ad', 'higoseni@mailinator.com', '1970-01-01', '', '1977-08-19', NULL, 'Fugit voluptatem di', 'Fugiat consequatur', 'Ipsum et libero temp', '', '$2y$10$JIKMggwLhP277CQ7iD7sN.l6EXMYE.SLMjoghXpIG3s6MM9rus.g.', 'Male', '', '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 1, '', NULL),
+(3, 'ETSA715002', 0, 0, NULL, NULL, 'Saepe labore ea inci', 'Sed dolor ad incidid', 'Paul Chapman', 'Leblanc', 'Debra Collins', 'Dorian Kirby', 'Consequuntur qui par', 'Aliqua Voluptate ad', 'higoseni@mailinator.com', '1970-01-01', '', '1977-08-19', NULL, 'Fugit voluptatem di', 'Fugiat consequatur', 'Ipsum et libero temp', '', '$2y$10$VpI4m3iYBLeTv1DId0Omd./yVWOJP8H9VRp3M8mnYhr9IGc8MV1pO', 'Male', '', '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 1, '', NULL),
 (4, 'ETSA715003', 0, 0, NULL, NULL, 'Ut perferendis labor', 'Est maxime et quod ', 'Candace Cleveland', 'Mcpherson', 'Igor Maxwell', 'Daphne Hobbs', 'Ducimus deserunt do', 'In qui sapiente ut a', 'qajane@mailinator.com', '1970-01-01', '', '1977-10-19', NULL, 'Atque eaque tempora ', 'Corrupti est ducimu', 'Iure nulla atque nes', '', '$2y$10$QHqAXlx2MHFB9jLixJVTV.KuQo05a5MOEeXZjncJoCW3/aBhDcz3a', 'Male', '', '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 1, '', NULL);
 
 -- --------------------------------------------------------
@@ -5875,7 +5881,9 @@ CREATE TABLE `student_behaviour` (
 --
 
 INSERT INTO `student_behaviour` (`id`, `student_id`, `class_id`, `remarks`, `comments`, `create_date`, `created_at`, `updated_at`) VALUES
-(32, 20, 1, 'What is your behaviour at home', 'behaviour is good', '2023-11-08', '2024-10-22 21:07:30', '0000-00-00 00:00:00');
+(32, 20, 1, 'What is your behaviour at home', 'behaviour is good', '2023-11-08', '2024-10-22 21:07:30', '0000-00-00 00:00:00'),
+(33, 20, 1, 'what is your child\'s age?', '10', '2024-02-09', '2024-12-18 19:55:47', '0000-00-00 00:00:00'),
+(34, 20, 1, 'what is child activity at home', 'normal', '2023-11-08', '2024-12-18 22:09:01', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -6835,7 +6843,66 @@ INSERT INTO `userlog` (`id`, `user`, `role`, `class_section_id`, `ipaddress`, `u
 (379, 'parent20', 'parent', NULL, '::1', 'Chrome 130.0.0.0, Windows 10', '2024-11-12 13:56:16'),
 (380, 'Willa21', 'student', 1, '::1', 'Chrome 130.0.0.0, Windows 10', '2024-11-12 13:56:29'),
 (381, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 130.0.0.0, Windows 10', '2024-11-12 13:57:45'),
-(382, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 130.0.0.0, Windows 10', '2024-11-28 17:10:05');
+(382, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 130.0.0.0, Windows 10', '2024-11-28 17:10:05'),
+(383, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-18 15:34:06'),
+(384, 'parent20', 'parent', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-18 15:36:49'),
+(385, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-18 15:53:09'),
+(386, 'parent20', 'parent', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-18 15:54:55'),
+(387, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-18 16:36:48'),
+(388, 'parent20', 'parent', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-18 18:05:15'),
+(389, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-18 18:05:54'),
+(390, 'parent20', 'parent', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-18 18:06:13'),
+(391, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-18 18:07:12'),
+(392, 'parent20', 'parent', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-18 18:08:20'),
+(393, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-18 18:09:23'),
+(394, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 12:48:20'),
+(395, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 16:28:42'),
+(396, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 18:10:53'),
+(397, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 18:12:01'),
+(398, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 18:15:12'),
+(399, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 18:16:04'),
+(400, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 18:17:50'),
+(401, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 18:19:56'),
+(402, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 18:22:48'),
+(403, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 18:27:22'),
+(404, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 18:27:47'),
+(405, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 18:28:12'),
+(406, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 18:29:30'),
+(407, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 19:01:12'),
+(408, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 19:03:30'),
+(409, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 19:05:00'),
+(410, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 19:08:42'),
+(411, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 19:58:56'),
+(412, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 20:00:19'),
+(413, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 20:02:51'),
+(414, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 20:07:14'),
+(415, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 20:35:12'),
+(416, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 20:43:28'),
+(417, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 20:44:36'),
+(418, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 20:47:27'),
+(419, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-19 20:52:10'),
+(420, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-20 13:19:47'),
+(421, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-20 13:20:46'),
+(422, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-20 13:21:28'),
+(423, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-20 13:21:38'),
+(424, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-21 15:59:45'),
+(425, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-21 16:00:19'),
+(426, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-21 16:00:30'),
+(427, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-21 16:01:03'),
+(428, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-21 16:58:04'),
+(429, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-23 17:04:52'),
+(430, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-23 17:39:56'),
+(431, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-23 17:40:40'),
+(432, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-23 17:43:18'),
+(433, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-23 17:43:49'),
+(434, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-23 17:44:03'),
+(435, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-23 17:45:19'),
+(436, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-23 17:45:40'),
+(437, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-23 17:46:33'),
+(438, 'Willa21', 'student', 1, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-23 17:49:03'),
+(439, 'Willa21', 'student', 1, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-23 17:50:52'),
+(440, 'admin@schools.247pos.ng', 'Super Admin', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-23 17:54:58'),
+(441, 'higoseni@mailinator.com', 'Teacher', NULL, '::1', 'Chrome 131.0.0.0, Windows 10', '2024-12-23 17:57:38');
 
 -- --------------------------------------------------------
 
@@ -9283,7 +9350,7 @@ ALTER TABLE `payslip_allowance`
 -- AUTO_INCREMENT for table `permission_category`
 --
 ALTER TABLE `permission_category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7018;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20104;
 
 --
 -- AUTO_INCREMENT for table `permission_group`
@@ -9337,13 +9404,13 @@ ALTER TABLE `reference`
 -- AUTO_INCREMENT for table `results`
 --
 ALTER TABLE `results`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT for table `result_details`
 --
 ALTER TABLE `result_details`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- AUTO_INCREMENT for table `roles`
@@ -9355,7 +9422,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT for table `roles_permissions`
 --
 ALTER TABLE `roles_permissions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1546;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1549;
 
 --
 -- AUTO_INCREMENT for table `room_types`
@@ -9547,7 +9614,7 @@ ALTER TABLE `student_attendences`
 -- AUTO_INCREMENT for table `student_behaviour`
 --
 ALTER TABLE `student_behaviour`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `student_doc`
@@ -9709,7 +9776,7 @@ ALTER TABLE `upload_contents`
 -- AUTO_INCREMENT for table `userlog`
 --
 ALTER TABLE `userlog`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=383;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=442;
 
 --
 -- AUTO_INCREMENT for table `users`

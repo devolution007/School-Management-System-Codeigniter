@@ -175,7 +175,7 @@ if ($result->Type == 1) {
                 </div>
             </div>
             <br>
-            <div class="row" style="background-color:lightblue; margin:10px">
+            <div class="row" style="background-color:lightblue; margin:10px 0px">
                 <div class="col-md-6">
                     <b>Name:</b> <span class="text-color"> <?= $student["firstname"]; ?> <?= $student["lastname"]; ?>
                     </span>
